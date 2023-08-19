@@ -1,26 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
 
-function App() {
+import { Home } from './pages/Home';
+import { Catalog } from './pages/Catalog';
+import { MainLayout } from './layouts/MainLayout';
+
+import './css/normalize.css';
+import './css/fonts.css';
+import './css/style.css';
+import './css/media.css';
+import 'swiper/css';
+
+import { fetchCategories } from './redux/categories/asyncActions';
+import { useAppDispatch } from './redux/store';
+
+const App: React.FC = () => {
+  const dispatch = useAppDispatch();
+
+  const getCategories = async () => {
+    dispatch(fetchCategories());
+  };
+
+  React.useEffect(() => {
+    getCategories();
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="" element={<MainLayout />}>
+        <Route path="" element={<Home />} />
+        <Route path="catalog" element={<Catalog />} />
+      </Route>
+    </Routes>
   );
-}
+};
 
 export default App;

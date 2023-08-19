@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "image": "https://supermarine.ru/upload/resize_cache/iblock/c37/293_165_1/hm32jh3roiiqmdugmm2h5qy1ctumladk.png",
+    "name": "Квадроциклы",
+    "category": "quad_bike"
+  },
+  {
+    "id": "2",
+    "image": "https://supermarine.ru/upload/resize_cache/iblock/052/745_420_1/zaqzkvnx0udmlmvfap3wt23lsu6yjks9.webp",
+    "name": "Гидроциклы",
+    "category": "jet_ski"
+  },
+  {
+    "id": "3",
+    "image": "https://supermarine.ru/upload/iblock/a09/a09f22e219840198791b78d75dd400fc.jpg",
+    "name": "Катера",
+    "category": "boat"
+  },
+  {
+    "id": "4",
+    "image": "https://supermarine.ru/upload/iblock/a94/a9484072d21ed9ba9c9b815af4063e84.jpg",
+    "name": "Моторы",
+    "category": "engine"
+  },
+  {
+    "id": "5",
+    "image": "https://supermarine.ru/upload/iblock/88e/88ea620810ec2ae059919a15f197caae.jpg",
+    "name": "Мотовездеходы",
+    "category": "ATV"
+  },
+  {
+    "id": "6",
+    "image": "https://supermarine.ru/upload/iblock/88f/88fb76e3403b3592149e7b76ee1c71aa.jpg",
+    "name": "Снегоходы",
+    "category": "snowmobile"
+  }
+]
